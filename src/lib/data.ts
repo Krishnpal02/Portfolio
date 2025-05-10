@@ -4,7 +4,7 @@ import ThisPort from '../../public/ThisPortfolio.jpg'
 
 export const fullName = "Krishnpal Chouhan";
 export const professionalTitle = "Software Engineer";
-export const emailAddress = "krishnpalchouhan02@example.com"; // Placeholder email
+export const emailAddress = "krishnpalchouhan02@gmail.com"; // Placeholder email
 
 export const navLinks = [
   { href: "#about", label: "About" },
