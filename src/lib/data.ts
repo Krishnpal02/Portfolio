@@ -88,8 +88,6 @@ export const projectsData: Project[] = [
     imageSrc: "  https://picsum.photos/seed/meditation/600/400",
     imageHint: "CRM dashboard",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FireBase", "Stripe","React"],
-    liveUrl: "#",
-    repoUrl: "#",
     category: "Web App",
     Icon: MonitorSmartphone,
   },
