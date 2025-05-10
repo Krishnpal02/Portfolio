@@ -1,5 +1,6 @@
 import { Github, Linkedin, Twitter, Briefcase, Code, MonitorSmartphone, PenTool } from 'lucide-react';
 import type { StaticImageData } from 'next/image';
+import ThisPort from '../../public/ThisPortfolio.jpg'
 
 export const fullName = "Krishnpal Chouhan";
 export const professionalTitle = "Software Engineer";
@@ -85,7 +86,7 @@ export const projectsData: Project[] = [
     id: "proj1",
     title: "This Portfoilo",
     description: "I crafted a sophisticated e-commerce web application utilizing React for dynamic UI rendering, Redux and Redux Saga for efficient state management and Tailwind CSS for sleek, responsive styling.",
-    imageSrc: "https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc",
+    imageSrc: "https://picsum.photos/id/9/367/267",
     imageHint: "CRM dashboard",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FireBase", "Stripe","React"],
     category: "Web App",
