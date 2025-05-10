@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 66% 11%; /* Dark Blue #0A192F */
+    --foreground: 210 17% 90%; /* Light Grey/Off-white for body text */
+
+    --card: 220 60% 15%; /* Slightly lighter dark blue for cards */
+    --card-foreground: 210 17% 90%; /* Regular text on cards */
+
+    --popover: 220 60% 13%;
+    --popover-foreground: 210 17% 90%;
+
+    --primary: 167 100% 70%; /* Teal #64FFDA - for main call-to-actions, links */
+    --primary-foreground: 220 66% 11%; /* Dark Blue for text on Teal buttons */
+
+    --secondary: 93 100% 79%; /* Light Green #CCFF99 - for secondary highlights */
+    --secondary-foreground: 220 66% 11%; /* Dark Blue for text on Light Green elements */
+
+    --muted: 220 50% 25%; /* Muted dark blue */
+    --muted-foreground: 210 15% 65%; /* Muted version of the off-white */
+
+    --accent: 167 100% 70%; /* Teal #64FFDA - for general accents, interactive highlights */
+    --accent-foreground: 220 66% 11%; /* Dark Blue for text on Teal accents */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 50% 30%; /* Border color */
+    --input: 220 50% 20%; /* Input background */
+    --ring: 167 100% 70%; /* Teal for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Sidebar variables - kept for shadcn components compatibility, but styled with main theme */
+    --sidebar-background: 220 63% 13%; /* Slightly adjusted background for sidebar context */
+    --sidebar-foreground: 210 17% 85%;
+    --sidebar-primary: 167 100% 70%;
+    --sidebar-primary-foreground: 220 66% 11%;
+    --sidebar-accent: 93 100% 79%;
+    --sidebar-accent-foreground: 220 66% 11%;
+    --sidebar-border: 220 50% 30%;
+    --sidebar-ring: 167 100% 70%;
+  }
+
+  /* Since the design is dark by default, .dark can be the same or slightly adjusted if needed */
+  .dark {
+    --background: 220 66% 11%;
+    --foreground: 210 17% 90%;
+    --card: 220 60% 15%;
+    --card-foreground: 210 17% 90%;
+    --popover: 220 60% 13%;
+    --popover-foreground: 210 17% 90%;
+    --primary: 167 100% 70%;
+    --primary-foreground: 220 66% 11%;
+    --secondary: 93 100% 79%;
+    --secondary-foreground: 220 66% 11%;
+    --muted: 220 50% 25%;
+    --muted-foreground: 210 15% 65%;
+    --accent: 167 100% 70%;
+    --accent-foreground: 220 66% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 50% 30%;
+    --input: 220 50% 20%;
+    --ring: 167 100% 70%;
+
+    --sidebar-background: 220 63% 13%;
+    --sidebar-foreground: 210 17% 85%;
+    --sidebar-primary: 167 100% 70%;
+    --sidebar-primary-foreground: 220 66% 11%;
+    --sidebar-accent: 93 100% 79%;
+    --sidebar-accent-foreground: 220 66% 11%;
+    --sidebar-border: 220 50% 30%;
+    --sidebar-ring: 167 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-primary; /* Teal for headings */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
