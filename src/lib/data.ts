@@ -85,7 +85,7 @@ export const projectsData: Project[] = [
     id: "proj1",
     title: "This Portfoilo",
     description: "I crafted a sophisticated e-commerce web application utilizing React for dynamic UI rendering, Redux and Redux Saga for efficient state management and Tailwind CSS for sleek, responsive styling.",
-    imageSrc: "  https://picsum.photos/seed/meditation/600/400",
+    imageSrc: "https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc",
     imageHint: "CRM dashboard",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FireBase", "Stripe","React"],
     category: "Web App",
